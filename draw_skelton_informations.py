@@ -16,7 +16,6 @@ parser.usage = parser.format_help()
 
 # 引数を解析する
 args = parser.parse_args()
-
 input_file = args.input
 
 csv_file = args.csv
@@ -75,17 +74,13 @@ out = cv2.VideoWriter(output_file, fourcc, fps, (frame_width, frame_height))
 # MediapipeのPoseモデルを初期化
 with mp_pose.Pose(static_image_mode=False, min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
 
-    # CSVファイルを書き込みモードでオープン
     csvfile = open(csv_file, mode='w', newline='')
-    # CSVライターを作成
     csv_writer = csv.writer(csvfile)
-    # ヘッダー行を書き込み
     csv_writer.writerow(['frame_number', 'landmark_name', 'landmark_x', 'landmark_y', 'landmark_z'])
 
     # フレームごとに処理を実行
     frame_number = 0
     while cap.isOpened():
-        # フレームをキャプチャ
         ret, frame = cap.read()
 
         if not ret:
