@@ -11,11 +11,11 @@
 + input_data/
     + 読み込む動画データを格納する．入力データに指定がない場合，このディレクトリ直下のinput_video.mp4が指定される．
 + output_data/
-    + 動画データ，CSVデータが出力される．
+    + 動画データ，CSVデータが出力される．  
 
 
 ### 使用方法
-python3 draw_skelton_informations.py [-h] [--input INPUTDATA] [--output OUTPUTDATA] [--csv OUTPUTCSV]
+python3 draw_skelton_informations.py [-h] [--input INPUTDATA] [--output OUTPUTDATA] [--csv OUTPUTCSV][--box][--skelton]
 
 + optional arguments:
   + -h, --help
@@ -26,7 +26,10 @@ python3 draw_skelton_informations.py [-h] [--input INPUTDATA] [--output OUTPUTDA
     + output file(mp4_filename)
   + --csv OUTPUTCSV
     + output csvfile(csv_filename)
-
+  + --box
+    + output only box
+  + --skelton
+    + output only skelton
 
 ### 実行環境
 + 実行環境
