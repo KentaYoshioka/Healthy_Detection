@@ -35,6 +35,18 @@ python3 draw_skelton_informations.py [-h] [--input INPUTDATA] [--output OUTPUTDA
     + output only skelton
 
 ### デモプログラム使用法
+#### Dockerを使用する場合
+
+```bash
+docker build -t healthy-detection:demo .
+xhost +
+docker run --rm \
+    -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
+    --device /dev/video0:/dev/video0:rwm \
+    healthy-detection:demo
+```
+
+#### Dockerを使用しない場合
 1. python3.11.3 のインストール
 2. import のためのインストール
 ```pip3 install -r requirements.txt```
