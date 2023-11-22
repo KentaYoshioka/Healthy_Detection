@@ -35,7 +35,7 @@ python3 draw_skelton_informations.py [-h] [--input INPUTDATA] [--output OUTPUTDA
     + output only skelton
 
 ### デモプログラム使用法
-1. python3 のインストール
+1. python3.11.3 のインストール
 2. import のためのインストール
 ```pip3 install -r requirements.txt```
 3. デモの実行
