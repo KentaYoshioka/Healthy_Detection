@@ -1,6 +1,5 @@
 ###### Requirements ######`
-pip>=23.3.1
 opencv-python==4.8.0.74
 numpy>=1.24.3
-lap
+lapx==0.5.5
 ultralytics>=8.0.200
