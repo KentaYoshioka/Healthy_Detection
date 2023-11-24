@@ -51,9 +51,23 @@ docker run --rm \
 2. import のためのインストール
 ```pip3 install -r requirements.txt```
 3. デモの実行
-```python3 detect_track.py```
-(設定)
-検知したい人の最大数を変更する場合には，コードの変更をお願いします．
+python3 detect_track.py [-h] [--type DETECTTYPE] [--limit DETECTEDPEOPLE] [--fps FPS] [--outlier VALIDATION][--model MODEL][--framesize SIZE]
+
++ optional arguments:
+  + -h, --help
+    + Show this help message and exit
+  + --type DETECTTYPE
+    + Set demo_type
+  + --limit DETECTEDPEOPLE
+    + Set numuber of detected people
+  + --fps FPS
+    + Set FPS
+  + --outlier VALIDATION
+    + Set validation
+  + --model MODEL
+    + Set model_data
+  + --framesize SIZE
+    + Set width and heigh of framesize
 
 ### 実行環境
 + 実行環境
