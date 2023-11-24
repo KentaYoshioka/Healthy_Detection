@@ -50,8 +50,7 @@ docker run --rm \
 1. python3.11.3 のインストール
 2. import のためのインストール
 ```pip3 install -r requirements.txt```
-3. デモの実行
-python3 detect_track.py [-h] [--type DETECTTYPE] [--limit DETECTEDPEOPLE] [--fps FPS] [--outlier VALIDATION][--model MODEL][--framesize SIZE]
+3. python3 detect_track.py [-h] [--type DETECTTYPE] [--limit DETECTEDPEOPLE] [--fps FPS] [--outlier VALIDATION][--model MODEL][--framesize SIZE]
 
 + optional arguments:
   + -h, --help
